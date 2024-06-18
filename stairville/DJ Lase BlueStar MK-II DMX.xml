@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device image="IMG-000680.png" type="DMXDevice" defaultdisplaystyle="image" dmxcversion="3.1.0" ddfversion="1.0.0">
+    <information>
+        <ddf-libary-id>2000</ddf-libary-id>
+        <model>DJ Lase BlueStar MK-II DMX</model>
+        <vendor>Stairville</vendor>
+        <author>Nevio Hirani, Thomas Höppner</author>
+        <mode>DMX</mode>
+    </information>
+    <functions>
+        <rawstep dmxchannel="0" name="Operating Mode">
+            <step caption="Laser off" mindmx="0" maxdmx="51" />
+            <step caption="Automatic (random, fast)" mindmx="52" maxdmx="102" />
+            <step caption="Automatic (random, slow)" mindmx="103" maxdmx="154" />
+        </rawstep>
+        <rawstep dmxchannel="1" name="Red laser">
+            <step caption="Laser off" mindmx="0" maxdmx="4" />
+            <step caption="Constanly on" mindmx="5" maxdmx="127" />
+            <step caption="Strobe effect" mindmx="128" maxdmx="254" />
+            <step caption="Sound controlled strobe" mindmx="255" maxdmx="255" />
+        </rawstep>
+        <rawstep dmxchannel="2" name="Green laser">
+            <step caption="Laser off" mindmx="0" maxdmx="4" />
+            <step caption="Constanly on" mindmx="5" maxdmx="127" />
+            <step caption="Strobe effect" mindmx="128" maxdmx="254" />
+            <step caption="Sound controlled strobe" mindmx="255" maxdmx="255" />
+        </rawstep>
+        <rawstep dmxchannel="3" name="Rotation z-axis red and green">
+            <step caption="No rotation" mindmx="0" maxdmx="4" />
+            <step caption="Rotation effect clockwise" mindmx="5" maxmdx="127" />
+            <step caption="No rotation" mindmx="128" maxdmx="133" />
+            <step caption="Rotation counter-clockwise" mindmx="134" maxdmx="255" />
+        </rawstep>
+        <rawstep dmxchannel="4" name="Rotation of blue LED backgorund around z-axis">
+            <step caption="No rotation" mindmx="0" maxdmx="4" />
+            <step caption="Rotation effect counter-clockwise" mindmx="5" maxdmx="127" />
+            <step caption="No rotation" mindmx="128" maxdmx="133" />
+            <step caption="Rotation effect counter-clockwise" mindmx="134" maxdmx="255" />
+        </rawstep>
+        <rawstep dmxchannel="5" name="Intensity of blue background LED">
+            <step caption="Background illumination off" mindmx="0" maxdmx="4" />
+            <step caption="Increasing brightness 0% ... 100%" mindmx="5" maxdmx="255" />
+        </rawstep>
+        <rawstep dmxchannel="6" name="Strobe effect of blue background LED">
+            <step caption="Background illumination off" mindmx="0" maxdmx="4" />
+            <step caption="Background illumination constantly on" mindmx="5" maxdmx="127" />
+            <step caption="Strobe effect" mindmx="128" maxdmx="254" />
+            <step caption="Sound controlled strobe" mindmx="255" maxdmx="255" />
+        </rawstep>
+    </functions>
+</device>
