@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device image="" type="DMXDevice" defaultdisplaystyle="image" dmxcversion="3.1.0" ddfversion="1.0.0">
+    <information>
+        <ddf-libary-id>5000</ddf-libary-id>
+        <model>LED PAR-64 RGBW+UV short sw</model>
+        <vendor>Eurolight</vendor>
+        <author>Nevio Hirani</author>
+        <mode>DMX</mode>
+    </information>
+    <functions>
+        <rawstep dmxchannel="0" name="Red">
+            <step caption="Red (0% - 100%)" mindmx="0" maxdmx="255" />
+        </rawstep>
+        <rawstep dmxchannel="1" name="Green">
+            <step caption="Green (0% - 100%)" mindmx="0" maxdmx="255" />
+        </rawstep>
+        <rawstep dmxchannel="2" name="Blue">
+            <step caption="Blue (0% - 100%)" mindmx="0" maxdmx="255" />
+        </rawstep>
+        <rawstep dmxchannel="3" name="White">
+            <step caption="White (0% - 100%)" mindmx="0" maxdmx="255" />
+        </rawstep>
+        <rawstep dmxchannel="4" name="UV">
+            <step caption="UV (0% - 100%)" mindmx="0" maxdmx="255" />
+        </rawstep>
+        <rawstep dmxchannel="5" name="Dimmer">
+            <step caption="Dimmer (0% - 100%)" mindmx="0" maxdmx="255" />
+        </rawstep>
+        <rawstep dmxchannel="6" name="Operating mode">
+            <step caption="none" mindmx="0" maxdmx="0" />
+            <step caption="Sound mode (30 colors)" mindmx="1" maxdmx="5" />
+            <step caption="none" mindmx="6" maxdmx="10" />
+            <step caption="Strobe effect (increasing speed)" mindmx="11" maxdmx="255" />
+        </rawstep>
+    </functions>
+</device>
